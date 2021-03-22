@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/workspace/src/HelloEventWorker/HelloEventWorker.csproj": {}
+  },
+  "projects": {
+    "/workspace/src/HelloEventWorker/HelloEventWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/workspace/src/HelloEventWorker/HelloEventWorker.csproj",
+        "projectName": "HelloEventWorker",
+        "projectPath": "/workspace/src/HelloEventWorker/HelloEventWorker.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspace/src/HelloEventWorker/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/workspace/src/HelloWebApi/HelloWebApi.csproj": {
+                "projectPath": "/workspace/src/HelloWebApi/HelloWebApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EventStore.Client": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/workspace/src/HelloWebApi/HelloWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/workspace/src/HelloWebApi/HelloWebApi.csproj",
+        "projectName": "HelloWebApi",
+        "projectPath": "/workspace/src/HelloWebApi/HelloWebApi.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspace/src/HelloWebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EventStore.Client": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

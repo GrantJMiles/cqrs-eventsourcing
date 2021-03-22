@@ -1,0 +1,9 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Compound",
+            "configurations": [".NET Core Launch (console)",".NET Core Launch (web)"]
+        }
+    ]
+}

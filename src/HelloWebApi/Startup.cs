@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using EventStore.ClientAPI;
 using EventSourcingTaskApp.Infrastructure;
+using MassTransit;
 
 namespace HelloWebApi
 {
@@ -34,6 +35,16 @@ namespace HelloWebApi
                 connectionName: Configuration.GetValue<string>("EventStore:ConnectionName"));
 
             eventStoreConnection.ConnectAsync().GetAwaiter().GetResult();
+
+            services.AddMassTransit(x =>
+            {
+                x.UsingRabbitMq((context, config) => 
+                {
+                    config.Host("masstransit");
+                });
+            });
+
+            services.AddMassTransitHostedService();
 
             services.AddSingleton(eventStoreConnection);
             

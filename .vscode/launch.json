@@ -3,7 +3,7 @@
     "compounds": [
         {
             "name": "Compound",
-            "configurations": [".NET Core Launch (console)",".NET Core Launch (web)"]
+            "configurations": [".NET Core Launch (Consumer One)",".NET Core Launch (web)"]
         }
     ]
 }

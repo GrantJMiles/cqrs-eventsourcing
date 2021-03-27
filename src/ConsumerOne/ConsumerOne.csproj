@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-ConsumerOne-82060306-1477-4008-97C6-10AA888E9676</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eventstore.Client" Version="21.2.0" />
+    <PackageReference Include="MassTransit" Version="7.1.7" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.1.7" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+  </ItemGroup>
+</Project>

@@ -70,3 +70,17 @@
 /workspace/src/HelloWebApi/obj/Debug/net5.0/HelloWebApi.RazorTargetAssemblyInfo.cache
 /workspace/src/HelloWebApi/obj/Debug/net5.0/HelloWebApi.csproj.CopyComplete
 /workspace/src/HelloWebApi/obj/Debug/net5.0/HelloWebApi.genruntimeconfig.cache
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Automatonymous.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/GreenPipes.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/MassTransit.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/MassTransit.RabbitMqTransport.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/NewId.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/RabbitMQ.Client.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Faker.Net.5.0.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/MassTransit.AspNetCoreIntegration.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/de-DE/Faker.Net.5.0.resources.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Abstractions.dll
+/workspace/src/HelloWebApi/bin/Debug/net5.0/Abstractions.pdb

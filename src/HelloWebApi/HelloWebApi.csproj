@@ -6,7 +6,15 @@
 
   <ItemGroup>
     <PackageReference Include="EventStore.Client" Version="5.0.6" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Faker.Net" Version="1.5.126" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.1.7" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.1.7" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

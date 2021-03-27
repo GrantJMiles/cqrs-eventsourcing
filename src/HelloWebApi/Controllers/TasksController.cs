@@ -5,6 +5,10 @@ namespace EventSourcingTaskApp.Controllers
     using Microsoft.AspNetCore.Mvc;
     using System;
     using System.Threading.Tasks;
+    using MassTransit;
+    using Microsoft.AspNetCore.Mvc;
+    using Faker;
+    using Abstractions;
 
     [Route("api/tasks/{id}")]
     [ApiController]
@@ -12,10 +16,12 @@ namespace EventSourcingTaskApp.Controllers
     public class TasksController : ControllerBase
     {
         private readonly AggregateRepository _aggregateRepository;
+        private readonly IPublishEndpoint _bus;
 
-        public TasksController(AggregateRepository aggregateRepository)
+        public TasksController(AggregateRepository aggregateRepository, IPublishEndpoint bus)
         {
             _aggregateRepository = aggregateRepository;
+            _bus = bus;
         }
 
         [HttpPost, Route("create")]
@@ -60,6 +66,20 @@ namespace EventSourcingTaskApp.Controllers
             await _aggregateRepository.SaveAsync(aggregate);
 
             return Ok();
+        }
+
+        [HttpGet, Route("add-event")]
+        public async Task<IActionResult> AddEvent()
+        {
+            var evt = new CreateEmail
+            {
+                Title = $"{Faker.Name.First()} - sending emails",
+                Message = Faker.Lorem.Paragraph(5),
+                Recipient = Faker.Name.FullName(NameFormats.StandardWithMiddle)
+            };
+            await _bus.Publish<CreateEmail>(evt);
+
+            return Ok("Event added");
         }
     }
 }
